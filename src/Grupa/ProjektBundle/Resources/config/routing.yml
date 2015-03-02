@@ -1,3 +1,21 @@
 grupa_projekt_homepage:
-    path:     /hello/{name}
+    path:     /
     defaults: { _controller: GrupaProjektBundle:Default:index }
+grupa_projekt_rejestracja:
+    path:     /rejestracja
+    defaults: { _controller: GrupaProjektBundle:Default:rejestracja }
+grupa_projekt_logowanie:
+    path:     /logowanie
+    defaults: { _controller: GrupaProjektBundle:Default:logowanie }
+grupa_projekt_popularne:
+    path:     /popularne
+    defaults: { _controller: GrupaProjektBundle:Kategorii:popularne }
+grupa_projekt_recenzowane:
+    path:     /recenzowane
+    defaults: { _controller: GrupaProjektBundle:Kategorii:recenzowane }
+grupa_projekt_gatunki:
+    path:     /gatunki
+    defaults: { _controller: GrupaProjektBundle:Kategorii:gatunki }
+grupa_projekt_gatunki:
+    path:     /gatunki/{gatunek}
+    defaults: { _controller: GrupaProjektBundle:Kategorii:gatunek }
