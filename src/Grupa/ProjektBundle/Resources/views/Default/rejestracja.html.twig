@@ -1,0 +1,54 @@
+<!-- Odwolanie do	layout.html.twig -->
+{% extends "ProjektBundle::layout.html.twig" %}
+
+
+{% block title %}
+	<title>Rejestracja</title>
+{% endblock %}
+		
+		
+{% block header %}
+	<div class="page-header">
+		<h1>Panel rejestrowania</h1>
+	</div>
+{% endblock %}
+			
+{% block menu %}
+{% endblock %}
+			
+{% block content %}
+	<div class="row">
+		<form class="form-horizontal" role="form">
+			<div class="form-group">
+				<label class="control-label col-sm-2" for="email">Email:</label>
+				<div class="col-sm-10">
+					<input type="email" class="form-control" id="email" placeholder="Wprowadź email">
+				</div>
+			</div>
+			<div class="form-group">
+				<label class="control-label col-sm-2" for="username">Nazwa użytkownika:</label>
+				<div class="col-sm-10">
+					<input type="text" id="username" name="_username" class="form-control" placeholder="Wprowadź nazwę użytkownika" />
+				</div>
+			</div>
+			<div class="form-group">
+				<label class="control-label col-sm-2" for="pwd">Hasło:</label>
+				<div class="col-sm-10"> 
+					<input type="password" class="form-control" id="pwd" placeholder="Wprowadź hasło" />
+				</div>
+			</div>
+			<div class="form-group">
+				<label class="control-label col-sm-2" for="pwd">Powtóż hasło:</label>
+				<div class="col-sm-10"> 
+					<input type="password" class="form-control" id="pwd" placeholder="Powtóż wprowadzone hasło" />
+				</div>
+			</div>
+			<div class="form-group">
+				<div class="col-sm-10"> 
+					<a href="#" class="btn btn-info" role="button">Zarejestruj się</a>
+				</div>
+			</div>
+		</form>	
+	</div>
+{% endblock %}
+			
